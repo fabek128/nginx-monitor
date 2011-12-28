@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		NGINX - Monitoring tool
+	</title>
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>			
+	<script type="text/javascript" src="./jqplot/jquery.jqplot.min.js"></script>	
+	<script type="text/javascript" src="./plugins/jqplot.pointLabels.min.js"></script>
+	<script type="text/javascript" src="./plugins/jqplot.canvasAxisLabelRenderer.min.js"></script>
+	<script type="text/javascript" src="./plugins/jqplot.dateAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="./plugins/jqplot.canvasTextRenderer.min.js"></script>
+	<script type="text/javascript" src="./plugins/jqplot.canvasAxisTickRenderer.min.js"></script>
+	<script type="text/javascript" src="./plugins/jqplot.categoryAxisRenderer.min.js"></script>
+	<script type="text/javascript" src="./plugins/jqplot.barRenderer.min.js"></script>	
+	<script type="text/javascript" src="./faye/faye-browser-min.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+
+	<link rel="stylesheet" href="./css/jquery.jqplot.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="./css/buttons.css" type="text/css" media="screen" />
+</head>
+
+<body>
+	<header>
+		<H1>NGINX - Monitoring tool</H1>
+	</header>
+	<nav>
+		<a class="button blue" href="javascript: setShowInfo('act')">Active connections</a>
+		<a class="button blue" href="javascript: setShowInfo('rea')">Reading</a>
+		<a class="button blue" href="javascript: setShowInfo('wri')">Writing</a>
+		<a class="button blue" href="javascript: setShowInfo('wai')">Waiting</a>
+	</nav>
+	<section>
+		<div id="chart" style="margin:0 auto 0 auto; margin-top: 30px; width:990px; height:300px;"></div>
+	</section>
+	<footer></footer>
+	
+</body>
+</html>
